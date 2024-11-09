@@ -19,6 +19,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: corne_left
+    shield: monokey_R
   - board: seeeduino_xiao_ble
-    shield: corne_right
+    shield: monokey_L
