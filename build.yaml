@@ -20,5 +20,6 @@
 include:
   - board: seeeduino_xiao_ble
     shield: monokey_R
+    snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: monokey_L
