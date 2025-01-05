@@ -3,8 +3,6 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
         zmk,physical-layout = &monokey_physical_layout;
     };
 
