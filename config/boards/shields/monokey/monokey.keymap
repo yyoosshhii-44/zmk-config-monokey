@@ -64,6 +64,36 @@
         };
     };
 
+     tap_dance {
+        compatible = "zmk,tap-dance";
+
+        td_backspace {
+            label = "TD_BACKSPACE";
+            // 1回タップ、2回タップを定義
+            taps = <1>, <2>;
+
+            // 1回タップ => &kp BACKSPACE
+            // 2回タップ => マクロを呼び出し連打
+            bindings = <
+                &kp BACKSPACE
+                &macro_repeated_backspace
+            >;
+        };
+    };
+
+    behaviors {
+        backspace_hold_layer: backspace_hold_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BACKSPACE_HOLD_LAYER";
+
+            // [タップ動作]       [ホールド動作]
+            bindings = < &tap_dance_td_backspace >, < &mo 3 >;
+
+            // ホールド判定の時間（例：200ms）
+            tapping-term-ms = <200>;
+        };
+    };
+
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
