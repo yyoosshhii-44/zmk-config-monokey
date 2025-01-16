@@ -36,10 +36,6 @@
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
     };
 
     macros {
@@ -81,7 +77,16 @@
     };
 
     behaviors {
-        backspace_hold_layer: backspace_hold_layer {
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+         backspace_hold_layer: backspace_hold_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "BACKSPACE_HOLD_LAYER";
 
@@ -89,17 +94,6 @@
             bindings = < &tap_dance_td_backspace >, < &mo 3 >;
 
             // ホールド判定の時間（例：200ms）
-            tapping-term-ms = <200>;
-        };
-    };
-
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
     };
