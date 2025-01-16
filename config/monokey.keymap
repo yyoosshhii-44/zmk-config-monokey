@@ -68,7 +68,7 @@
                 &macro_release
             >;
         };
-    };
+  
 
          macro_repeated_backspace: macro_repeated_backspace {
             compatible = "zmk,behavior-macro";
