@@ -55,6 +55,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+         td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp V>, <&kp P>;
+        };
     };
 
     keymap {
