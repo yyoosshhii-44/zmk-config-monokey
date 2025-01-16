@@ -51,6 +51,19 @@
         };
     };
 
+       macros {
+        macro_repeated_backspace: macro_repeated_backspace {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_REPEATED_BACKSPACE";
+            #binding-cells = <0>;
+
+            bindings = <
+                &macro_repeat_press   // 「押している間繰り返し送信」
+                &kp BACKSPACE
+            >;
+        };
+    };
+
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
