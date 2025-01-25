@@ -86,18 +86,18 @@
         FUNCTION {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT           &kp CARET          &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp F1           &kp F2       &kp F3    &kp F4      &kp F5                &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS             &kp EQUAL
-&kp F6           &kp F7       &kp F8    &kp F9      &kp F10               &kp COLON          &trans            &kp COMMA          &kp PERIOD            &kp BACKSLASH
-&kp F11          &kp F12      &trans    &trans      &trans       &mo 6    &trans             &trans                                                     &trans
+&trans           &trans       &trans    &trans      &trans                &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS             &kp EQUAL
+&trans           &trans       &trans    &trans      &trans                &kp COLON          &trans            &kp COMMA          &kp PERIOD            &kp BACKSLASH
+&trans           &trans       &trans    &trans      &trans       &mo 6    &trans             &trans                                                     &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans  &trans            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &trans
-&trans                &trans                &trans                &trans  &trans            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
-&trans                &trans                &trans                &trans  &trans            &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
-&trans                &trans                &trans                &trans  &trans  &trans    &kp MINUS     &kp PERIOD                                &trans
+&kp F1                &kp F2                &kp F3          &kp F4   &kp F5             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &trans
+&kp F6                &kp F7                &kp F8          &kp F9   &kp F10            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS      &kp MINUS
+&kp F11               &kp F12               &kp F13         &kp F14  &kp F15            &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp SLASH
+&kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))  &trans   &trans   &trans    &kp MINUS     &kp PERIOD                                &trans
             >;
         };
 
