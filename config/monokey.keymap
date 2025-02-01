@@ -105,7 +105,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans            &trans     &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)    &trans
 &trans  &trans  &trans  &trans  &trans            &kp LC(A)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(E)
-&trans  &trans  &trans  &trans  &trans            &trans     &trans              &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans            &trans     &kp LG(LEFT)        &trans          &kp RG(RIGHT)    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &mo 6                               &trans           &bootloader
             >;
 
