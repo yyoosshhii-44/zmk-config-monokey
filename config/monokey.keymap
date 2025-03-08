@@ -111,7 +111,7 @@
             bindings = <
 &kp RG(RS(NUMBER_3))  &kp RG(RS(NUMBER_4))  &kp RG(RS(N5))  &trans  &trans            &kp LC(UP_ARROW)  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)    &kp LC(DOWN_ARROW)
 &trans                &trans                &trans          &trans  &trans            &kp LC(A)         &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(E)
-&trans                &trans                &trans          &trans  &trans            &trans            &kp LG(LEFT)        &trans          &kp RG(RIGHT)    &trans
+&trans                &trans                &trans          &trans  &trans            &kp C_PREVIOUS    &kp LG(LEFT)        &trans          &kp RG(RIGHT)    &kp C_NEXT
 &trans                &trans                &trans          &trans  &trans  &trans    &trans            &trans                              &trans           &bootloader
             >;
 
