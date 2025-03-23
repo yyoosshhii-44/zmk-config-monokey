@@ -24,6 +24,16 @@
         };
     };
 
+    behaviors {
+        right_click: right_click_behavior {
+            compatible = "zmk,behavior-mouse-key";
+            label = "RIGHT_CLICK";
+            #binding-cells = <0>;
+            // 右クリックは通常 MB3 に対応（ZMKの標準定義）
+            bindings = <&mkp MB3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
