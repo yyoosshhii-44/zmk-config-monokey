@@ -30,7 +30,7 @@
             label = "RIGHT_CLICK";
             #binding-cells = <0>;
 
-            // 右クリックは通常 MB3 に対応（ZMKの標準定義）
+            // 右クリックは通常 MB2 に対応（ZMKの標準定義）
 
             bindings = <&mkp MB2>;
         };
