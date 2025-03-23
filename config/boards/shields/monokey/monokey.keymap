@@ -77,14 +77,13 @@
     };
 
     behaviors {
-        right_click: right_click_behavior {
-            compatible = "zmk,behavior-mouse-key";
-            label = "RIGHT_CLICK";
-            #binding-cells = <0>;
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
 
-            // 右クリックは通常 MB2 に対応（ZMKの標準定義）
-
-            bindings = <&mkp MB2>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
 
          backspace_hold_layer: backspace_hold_layer {
