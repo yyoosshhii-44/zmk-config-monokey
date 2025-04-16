@@ -25,5 +25,4 @@ include:
     shield: monokey_L
   - board: seeeduino_xiao_ble
     shield: settings_reset
-  - board: seeeduino_xiao_ble
-    shield: hummingbird rgbled_adapter
+  
